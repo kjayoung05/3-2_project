@@ -20,7 +20,7 @@ for script in scripts:
     
     # 실행 중 에러가 발생하면 중단
     if result.returncode != 0:
-        print(f"❌ 에러 발생으로 중단됩니다: {script}")
+        print(f"에러 발생으로 중단됩니다: {script}")
         break
 
-print("\n🎉 모든 분석 과정이 완료되었습니다!")
+print("\n모든 분석 과정이 완료되었습니다!")
