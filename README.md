@@ -1,6 +1,6 @@
 import subprocess
 
-# 순서대로 실행할 스크립트 목록
+
 scripts = [
     "01_preprocess_v2.py",          # 9~10차 원자료에서 11개 변수 + 결과변수(MMSE) 추출 후 병합하여 분석용 데이터셋 생성
     "02_modeling_v2.py",          # 전처리된 데이터를 바탕으로 기본 모델링 수행 및 주요 표(표3, 4, 5) 생성
@@ -20,7 +20,7 @@ for script in scripts:
     
     # 실행 중 에러가 발생하면 중단
     if result.returncode != 0:
-        print(f"❌ 에러 발생으로 중단됩니다: {script}")
+        print(f" 에러 발생으로 중단됩니다: {script}")
         break
 
-print("\n🎉 모든 분석 과정이 완료되었습니다!")
+print("\n 모든 분석 과정이 완료되었습니다")
